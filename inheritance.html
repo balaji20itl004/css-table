@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class fourwheeler{
+            constructor(brand,type,vechicle){
+                this.brand=brand
+                this.type=type
+                this.vechicle=vechicle
+            }
+        }
+
+        class properties extends fourwheeler{
+            constructor(brand,type,vechicle,color,model){
+                super(brand,type,vechicle)
+                this.color=color
+                this.model=model
+            }
+            vechicledetails(){
+                document.write(this.brand)
+                document.write(this.type)
+                document.write(this.vechicle)
+                document.write(this.color)
+                document.write(this.model)
+            }
+        }
+
+        let a=new properties("tata","four wheeler","car","blue","suv")
+        a.vechicledetails()
+    </script>
+</body>
+</html>
+
+
+
+

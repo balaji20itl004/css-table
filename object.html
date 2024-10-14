@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        function createcar(brand,model,year){
+            return{
+                brand:brand,
+                model:model,
+                year:year,
+
+                getcarinfo: function(){
+                    return `Car Brand: ${this.brand}, car Model: ${this.model}, 
+                    Manufracture Year: ${this.year} `
+                }
+            }
+            
+        }
+
+        let a=createcar(prompt("Enter the car brand"),
+        prompt("Enter the car model"),
+        prompt("Enter the manufracture year"))
+        
+        document.write(a.getcarinfo())
+    </script>
+</body>
+</html>

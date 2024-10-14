@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0%;
+        margin: 0%;
+      }
+      
+      
+      
+      h1{
+        background-color: rgb(37, 160, 201);
+        color: white;
+        padding: 10px;
+        margin: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      ol li{
+       list-style-position: inside;
+       margin-left: 30px;
+       list-style: none;
+       padding: 10px;
+       width: 100%;
+       background-color: #ffff;
+       box-shadow: 0.5px 25px rgba(0, 0, 0, .1);
+       transition:0.5s;
+      }
+
+      ol li:hover{
+        transform: scale(1.1);
+        z-index: 100;
+        background-color: #25bcff;
+        color: black;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+      }
+
+     ol li span{
+         width: 20px;
+         height: 20px;
+         text-align: center;
+         line-height: 20px;
+         background: #25bcff;
+         color: #fff;
+         display: inline-block;
+         border-radius: 50%;
+         margin-right: 10px;
+         font-size: 12px;
+         font-weight: 600;
+         transform: translateY(-20px);
+     }
+      
+    </style>
+
+    <script>
+     let a=10
+      if (a>10){
+        document.write("a is correct")
+
+      }
+    </script>
+</head>
+<body>
+    
+    <h1>CSS List Item Hover Effect</h1>
+    <ol>
+        <li><span>1</span>List Item One</li>
+        <li><span>2</span>List Item Two</li>
+        <li><span>3</span>List Item Three</li>
+        <li><span>4</span>List Item Four</li>
+        <li><span>5</span>List Item Five</li>
+        <li><span>6</span>List Item six</li>
+    </ol>
+    <div class="footer">
+
+    </div>
+
+</body>
+</html>
